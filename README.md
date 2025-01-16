@@ -1,8 +1,8 @@
 # Password Manager
-To store password & generate password. We use modules like tkinter,random, pyperclip,messagebox.
-we create Labels, text entry space and button and import an image into our screen using canvas .
-Added  popup function to check if the fields are verified and if the fields are empty. With the help of the pyperclip we can copy the password and the user can paste it.
-The password saved as json. 
-Added search option for the user using json. 
-The email and password shows up through a popup message
+- The password Manager is created out of learnning of concepts as well as implementing to save the passwords and the email entered for the websites saved 
+- The password manager was created out of learning of GUI using python and many more libraries such as JSON, random module and pyperclip,tkinter.
+- Step 1 : To create the UI using tkinter module and creating buttons and labels and entry and introduced a new concept called columnspan where the size of one component is increased to 2 columns and focus() method to point out the cursor at the desired text field. Inserting an image into the UI using Canvas() method and PhotoImage() method. ANd Using Insert() method to insert an email text into the text box. END keyword is used to insert or delete a text after one character ends.
+- Step 2 : To create a password generater by loop through the list of symbols, letters, numbers created using List Compherension and using join() method to insert the password generated into the password list and inserting the passowrd generated into the password entry section and using pyperclip module's method copy() method to copy the password generated.
+- Step 3: Creation fo the saving of the file into the JSON file first we get hold of the password,email and website using get() method and then using exception handing with writing,reading and updating of the data entered into the software to prevent the FileNotFoundError as we have given the file in read mode first and checking and printing if the user has not entered anything into the text files and poping a message using messagebox's classes showinfo() method to enter the details.
+- Step 4: Searching if the password exists in the software. It is done again using JSON and exception handling by getting hold of the website entered by the user using get() method and check if the website is in data then if it exist then printing out the email and password by accessing the JSON data by reading as it is saved inform of a dictionary and get hold of the meail and password of the website and printing them. then if the user entered or in the beginning of the code if the user hasn't entered anything into the software it would cause an FileNotFoundError So we introduced Exception handling and displayed an error message to the user showing that the dataails to the website doesn't exist.
 
